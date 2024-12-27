@@ -1,0 +1,40 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+.googledino{
+    width: 720px;
+    height: 241px;
+    border: 4px solid red;
+    margin: 0 auto;
+position: relative;
+background-image: url(./dino/track.png);
+background-repeat: no-repeat;
+background-position: bottom;
+}
+
+.dino{
+width: 88px;
+height: 94px;
+background-image: url(./dino/dino.png);
+position: absolute;
+bottom: 0;
+left: 0;
+}
+
+.cactus{
+    width: 34px;
+    height: 70px;
+    background-image: url(./dino/cactus1.png);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.dinojump{
+   animation: jump 1s linear;
+}
+
+@keyframes jump {
+0%{bottom: 0px;}
+100%{bottom: 90px;}
+}
+
